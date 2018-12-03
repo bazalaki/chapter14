@@ -25,13 +25,14 @@
     }
     </style>
     <script>
- function validateForm() {
-if (document.forms[0].userName.value == "" ) {
-    alert("Name field cannot be empty.");
-    return false;
-} // end if
+ function validateForm() 
 if (document.forms[0].userEmail.value =="") {
     alert("Cannot leave E-mail");
+    return false;
+} // end if
+	    
+if (document.forms[0].userName.value == "" ) {
+    alert("Name field cannot be empty.");
     return false;
 } // end if
 alert("Name and E-mail are valid.");
